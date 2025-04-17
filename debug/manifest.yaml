@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  namespace: expense
+spec:
+  # one pod can contain multiple containers
+  containers:
+    - name: debug
+      image: ramki2537/debug:1.0.0
