@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend-green
   namespace: expense
-  # labels of deployement resource
+  # labels of deployment resource
   labels:
     app: backend
     tier: backend
@@ -13,17 +13,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-     app: backend
-     tier: backend
-     project: expense
-     version: green
+      app: backend
+      tier: backend
+      project: expense
+      version: green
   template:
     metadata:
       labels:
-       app: backend
-       tier: backend
-       project: expense
-       version: green
+        app: backend
+        tier: backend
+        project: expense
+        version: green
     spec:
       containers:
       - name: nginx
